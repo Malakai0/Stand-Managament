@@ -15,13 +15,14 @@ function Chances.Run(ChanceTable)
         Total = Total + V
     end
 
-    if math.ceil(Total) ~= 100 then
+    Total = math.ceil(Total)
+
+    if Total ~= 100 then
         error("Total doesn't add up to 100, \""..tostring(Total).."\" specified.")
     end
 
 
     local Number = math.random(0,100)
-    print("Number: " .. Number)
     for I, V in next, Entries do
         if V.Min <= Number and V.Max >= Number then
             return I

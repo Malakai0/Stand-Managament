@@ -15,8 +15,8 @@ local Chances = {
     ['S'] = 1,
     ['A'] = 2,
     ['B'] = 7,
-    ['C'] = 20,
-    ['D'] = 30,
+    ['C'] = 15,
+    ['D'] = 35,
     ['E'] = 40
 }
 
@@ -25,14 +25,12 @@ local StandIDs = {
     [1] = {
         ['Name'] = "Standless",
         ['DisplayName'] = 'Standless',
-        ['Directory'] = {},
         ['Stats'] = {"C","C","C"},
         ['Arrow'] = false
     },
     [2] = {
         ['Name'] = "StarPlatinum",
         ['DisplayName'] = 'Star Platinum',
-        ['Directory'] = {},
         ['Stats'] = {"A","A","A"},
         ['Arrow'] = true,
         ['Chance'] = 'A'
