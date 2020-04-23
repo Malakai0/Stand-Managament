@@ -59,7 +59,7 @@ function StandIDs.GetRandomStand()
     local Rank = ChanceModule.Run(Chances)
     print("Rank: " .. Rank)
     local Stands = StandIDs.GetStandOfRank(Rank)
-    local EachChance = math.ceil(100 / #Stands) -- math.ceil'ing just incase it returns 99.99..
+    local EachChance = 100 / #Stands -- math.ceil'ing just incase it returns 99.99..
     local NewChanceTable = {}
     for _, V in next, Stands do
         NewChanceTable[V] = EachChance
